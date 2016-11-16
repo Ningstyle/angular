@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('weekworkApp', ["ui.router"]).config(function($stateProvider,$urlRouterProvider){
+angular.module('weekworkApp', ["ui.router","Tab"]).config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.when("","/fon1")
 	$stateProvider.state("fon1",{
 		url:"/fon1",
