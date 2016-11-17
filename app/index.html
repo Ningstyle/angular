@@ -23,13 +23,21 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
-    <input type="button" value="信息一" ui-sref="fon1">
+    <div ng-controller="fon1">
+        <P>------------------------------轮播图一-------------------------------------------------------轮播图二</P>
+        <auto b="1" c="data"></auto>
+        <auto b="2" c="data"></auto>
+    </div>
+    <div ng-controller="fon2" class="Box2">
+    	<p>手风琴效果一</p>
+    	<myapp b="One" c="data"></myapp>
+    	<p>手风琴效果二</p>
+    	<myapp b="Two" c="data1"></myapp>
+    </div>
+    <!-- <input type="button" value="信息一" ui-sref="fon1">
     <input type="button" value="信息二" ui-sref="fon2">
-    <div ui-view id="box"></div>
-    <P>轮播图一</P>
-    <auto b="1"></auto>
-    <P>轮播图二</P>
-    <auto b="2"></auto>
+    <div ui-view id="box"></div> -->
+       
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
